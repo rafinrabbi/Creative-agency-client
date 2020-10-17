@@ -1,7 +1,7 @@
 import React from "react";
-import "./ServiceListCard.css";
+import "./ServiceCard.css";
 
-const ServiceListCard = (props) => {
+const ServiceCard = (props) => {
   const { image, orderedService, description } = props.service;
   return (
     <div style={{ marginTop: 50 }} className="col-md-6">
@@ -21,4 +21,4 @@ const ServiceListCard = (props) => {
   );
 };
 
-export default ServiceListCard;
+export default ServiceCard;

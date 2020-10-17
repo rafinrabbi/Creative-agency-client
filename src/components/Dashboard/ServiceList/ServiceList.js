@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { UserContext } from "../../../App";
-import ServiceListCard from "../ServiceListCard/ServiceListCard";
+import ServiceCard from "../ServiceCard/ServiceCard";
 import Sidebar from "../Sidebar/Sidebar";
 
 const ServiceList = () => {
@@ -32,9 +32,9 @@ const ServiceList = () => {
         </div>
         <div className="row">
           {servicesList.map((srvclst) => (
-            <ServiceListCard key={srvclst._id} service={srvclst}>
+            <ServiceCard key={srvclst._id} service={srvclst}>
               {srvclst.orderedService}
-            </ServiceListCard>
+            </ServiceCard>
           ))}
         </div>
       </div>

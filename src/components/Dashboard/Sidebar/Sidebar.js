@@ -43,30 +43,30 @@ const Sidebar = () => {
 
         <li>
           <Link to="/dashboard" className="text-white">
-            <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
+            <FontAwesomeIcon className="iconColor" icon={faGripHorizontal} /> <span>Dashboard</span>
           </Link>
         </li>
         <li>
           <Link to="/" className="text-white">
-            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+            <FontAwesomeIcon className="iconColor" icon={faHome} /> <span>Home</span>
           </Link>
         </li>
         {isAdmin ? (
           <div>
             <li>
               <Link to="/serviceListAdmin" className="text-white">
-                <FontAwesomeIcon icon={faList} />{" "}
+                <FontAwesomeIcon className="iconColor" icon={faList} />{" "}
                 <span>Service List Admin</span>
               </Link>
             </li>
             <li>
               <Link to="/addService" className="text-white">
-                <FontAwesomeIcon icon={faPlus} /> <span>Add Service</span>
+                <FontAwesomeIcon className="iconColor" icon={faPlus} /> <span>Add Service</span>
               </Link>
             </li>
             <li>
               <Link to="/makeAdmin" className="text-white">
-                <FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span>
+                <FontAwesomeIcon className="iconColor" icon={faUserPlus} className="iconColor" /> <span>Make Admin</span>
               </Link>
             </li>
           </div>
@@ -74,17 +74,17 @@ const Sidebar = () => {
           <div>
             <li>
               <HashLink to="/#services" className="text-white">
-                <FontAwesomeIcon icon={faShoppingCart} /> <span>Order</span>
+                <FontAwesomeIcon className="iconColor" icon={faShoppingCart} /> <span>Order</span>
               </HashLink>
             </li>
             <li>
               <Link to="/serviceList" className="text-white">
-                <FontAwesomeIcon icon={faHdd} /> <span>Service List</span>
+                <FontAwesomeIcon className="iconColor" icon={faHdd} /> <span>Service List</span>
               </Link>
             </li>
             <li>
               <Link to="/postReview" className="text-white">
-                <FontAwesomeIcon icon={faComments} /> <span>Review</span>
+                <FontAwesomeIcon className="iconColor" icon={faComments} /> <span>Review</span>
               </Link>
             </li>
           </div>
@@ -92,7 +92,7 @@ const Sidebar = () => {
       </ul>
       <div>
         <Link to="/" className="text-white">
-          <FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span>
+          <FontAwesomeIcon className="iconColor" icon={faSignOutAlt} /> <span>Logout</span>
         </Link>
       </div>
     </div>

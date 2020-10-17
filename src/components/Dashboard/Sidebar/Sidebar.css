@@ -1,5 +1,6 @@
 .sidebar {
-  background-image: linear-gradient(-20deg, #07157a, #092079, #00bfa3);
+  /* background-image: linear-gradient(-20deg, #1d0404, #8b8b8b, #201f1f); */
+  background-image: slategray;
   position: fixed;
 }
 .sidebar li {
@@ -11,4 +12,12 @@
 }
 .sidebar svg {
   margin-right: 5px;
+}
+
+span{
+  color: black;
+}
+
+.iconColor{
+  color: black;
 }
